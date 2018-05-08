@@ -108,6 +108,7 @@ class RabbitMqPolicy(object):
         for policy in policies:
             if not policy or policy.isSpace():
                 continue
+            print policy
             policy_name = policy.split('\t')[1]
             if policy_name == self._name:
                 return True
